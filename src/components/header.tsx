@@ -12,7 +12,14 @@ const Header: React.FC<{
 }> = ({ isSettingsOpen, handleSettingsOpen }) => {
   return (
     <RowContainer className="p-4 border-b border-slate-400 dark:border-slate-600">
-      <h1 className="text-lg font-bold">The Champ's Timer 🥊</h1>
+      <h1 className="text-lg font-bold">
+        <img
+          src="/stopwatch-icon.svg"
+          alt="Stopwatch"
+          className="size-10 inline-block bottom-0.5 relative mr-4"
+        />
+        The Champ's Timer
+      </h1>
 
       <Button onClick={handleSettingsOpen}>
         {isSettingsOpen ? (
